@@ -1,0 +1,12 @@
+// Import variables
+@import "./sass/config/variables";
+@import "./sass/config/global";
+
+// Imports components
+@import "./sass/components/ListFriends";
+@import "./sass/components/Button";
+
+// Import extras
+@import "./sass/extras/main";
+@import "./sass/extras/div";
+@import "./sass/extras/title";

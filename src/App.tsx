@@ -1,25 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Import hooks
+import { useState } from 'react';
 
-function App() {
+// Import interfaces
+import { IFriendsContext } from "./interfaces/FriendsContextState";
+
+// Import friends
+import friends from './data/friends';
+
+// Import context
+import FriendsContext from './contexts/FriendsContext';
+
+// Import components
+import { ListFriends } from './components/ListFriends';
+import { Button } from './components/Button';
+
+// It returns the application
+function App(): JSX.Element {
+
+  // Create the state to save in the global context (friendsContext)
+  const [friendsContextState, setFriendsContextState] = useState<IFriendsContext>(friends);
+
+  // Create handle of click to clear the list
+  const handleClick = (): void => setFriendsContextState({friends: []});
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="root__main" >
+      <div className="main__reminder" >
+          {/** The title has the list length count */}
+          <h1 className="reminder__title" >{friendsContextState.friends.length} birthdays today</h1>
+          
+          {/** Sharing the state with the components that require it */}
+          <FriendsContext.Provider value={ {friendsContextState, setFriendsContextState} }>
+            
+            {/** Render the list of friends*/}
+            <ListFriends />
+
+          </FriendsContext.Provider>
+
+          {/** It button clears the list */}
+          <Button handleClick={ handleClick } value="Clear all" labelText="clear" />
+      </div>
+    </main>
   );
 }
 

@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> There's taking the App snapshot 1`] = `
+<main
+  class="root__main"
+>
+  <div
+    class="main__reminder"
+  >
+    <h1
+      class="reminder__title"
+    >
+      5
+       birthdays today
+    </h1>
+    <ul
+      aria-label="list_friends"
+      class="reminder__list"
+    >
+      <li
+        aria-label="friend"
+        class="list__friend"
+      >
+        <div
+          class="friend__image"
+        >
+          <img
+            alt="Bertie Yates"
+            class="image__image--friend"
+            src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg"
+          />
+        </div>
+        <div
+          class="friend__information"
+        >
+          <h3
+            class="information__name--friend"
+          >
+            Bertie Yates
+          </h3>
+          <p
+            class="information__age--friend"
+          >
+            29
+             years
+          </p>
+        </div>
+      </li>
+      <li
+        aria-label="friend"
+        class="list__friend"
+      >
+        <div
+          class="friend__image"
+        >
+          <img
+            alt="Hester Hogan"
+            class="image__image--friend"
+            src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-3_rxtqvi.jpg"
+          />
+        </div>
+        <div
+          class="friend__information"
+        >
+          <h3
+            class="information__name--friend"
+          >
+            Hester Hogan
+          </h3>
+          <p
+            class="information__age--friend"
+          >
+            32
+             years
+          </p>
+        </div>
+      </li>
+      <li
+        aria-label="friend"
+        class="list__friend"
+      >
+        <div
+          class="friend__image"
+        >
+          <img
+            alt="Larry Little"
+            class="image__image--friend"
+            src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg"
+          />
+        </div>
+        <div
+          class="friend__information"
+        >
+          <h3
+            class="information__name--friend"
+          >
+            Larry Little
+          </h3>
+          <p
+            class="information__age--friend"
+          >
+            36
+             years
+          </p>
+        </div>
+      </li>
+      <li
+        aria-label="friend"
+        class="list__friend"
+      >
+        <div
+          class="friend__image"
+        >
+          <img
+            alt="Sean Walsh"
+            class="image__image--friend"
+            src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg"
+          />
+        </div>
+        <div
+          class="friend__information"
+        >
+          <h3
+            class="information__name--friend"
+          >
+            Sean Walsh
+          </h3>
+          <p
+            class="information__age--friend"
+          >
+            34
+             years
+          </p>
+        </div>
+      </li>
+      <li
+        aria-label="friend"
+        class="list__friend"
+      >
+        <div
+          class="friend__image"
+        >
+          <img
+            alt="Lola Gardner"
+            class="image__image--friend"
+            src="https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg"
+          />
+        </div>
+        <div
+          class="friend__information"
+        >
+          <h3
+            class="information__name--friend"
+          >
+            Lola Gardner
+          </h3>
+          <p
+            class="information__age--friend"
+          >
+            29
+             years
+          </p>
+        </div>
+      </li>
+    </ul>
+    <button
+      aria-label="clear"
+      class="button__button"
+    >
+      Clear all
+    </button>
+  </div>
+</main>
+`;
